@@ -1,0 +1,350 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{tikz}
+
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \scshape Malla Venkata Sai Ashish} \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 7997642581 ~ 
+    \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{im45145v@gmail.com}} ~ 
+    \href{https://linkedin.com/in/im45145v/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/im45145v} \ExternalLink} ~
+    \href{https://github.com/im45145v}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/im45145v} \ExternalLink} ~
+    \faMapMarker\ Hyderabad
+    \vspace{-6pt}
+\end{center}
+
+ \vspace{-4mm}
+% \small{
+% \textbf{Aspiring Software Development Engineer with a strong foundation in computer science and practical experience in designing, developing, and deploying web applications.} Proficient in Python and Go, with knowledge of cloud technologies such as AWS. Experienced in building backend services and seamlessly integrating various components and technologies.
+% }
+% \vspace{-2mm}
+%-----------PROFESSIONAL SUMMARY-----------
+% \section*{Professional Summary}
+% %\vspace{-1mm}
+% \small{
+% \textbf{Software Engineer with a strong foundation in computer science and practical experience in designing, developing, and deploying web applications.} Proficient in Python and Go, with knowledge of cloud technologies such as AWS. Experienced in building backend services and seamlessly integrating various components and technologies.
+% }
+% \vspace{-2mm}
+
+
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technologies and Technical skills }%technical skills
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     % \textbf{Languages}{: Python, Go, C, HTML/CSS, JavaScript, SQL} \\
+     % \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+     % \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+     % \textnormal{Python, Go, C, C++, MySQL, MongoDB, AWS, Flask, Gin, GitHub, Docker, Postman, Jenkins, Github Actions, HTML, CSS, JS, Linux } \\
+     \textnormal{Python, Go, C, C++, MySQL, MongoDB, AWS, Flask, Gin, GitHub, Docker, Postman, WebDev, Linux } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Startup, Inc}{May 2019 -- August 2019}
+%       {Front End Developer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%     \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-7pt}
+    \resumeSubHeadingListStart
+      
+        \resumeProjectHeading
+          {\href{https://github.com/im45145v/CampusNourish}{\textbf{Campus Nourish} \ExternalLink} $|$ \emph{MongoDB, Streamlit, Web Development}}{Jun 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented a \textbf{web app} for hostelers to view food availability, vote on meal options, and stay informed through polling and notice board features.}
+            \resumeItem{\textbf{Best Use of MongoDB Atlas} in \textbf{WaffleHacks} 2023 among 120+ projects.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+          
+        \resumeProjectHeading
+          {\href{https://devpost.com/software/snippetsafe}{\textbf{SnippetSafe} \ExternalLink} $|$ \emph{React.js, JavaScript, MongoDB, Hugging Face, GoDaddy}}{Jan 2024}
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{code snippet storage tool} with React.js and MongoDB, allowing efficient retrieval using AI-powered search.}
+            \resumeItem{Integrated tags and descriptions for snippets, enabling users to find relevant code snippets based on their queries quickly, and launched the tool with a website \textbf{hosted} on GoDaddy, providing easy access across devices.}
+            \resumeItem{\textbf{Winner of Frost Hacks} in Hyderabad, emerging as the best among 135+ projects and 500+ participants.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+          
+        \resumeProjectHeading
+          {\href{https://devpost.com/software/flowmingo}{\textbf{Flowmingo} \ExternalLink} $|$ \emph{Flow Blockchain, IPFS, Streamlit}}{Feb 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a platform to manage \textbf{smart contracts, NFTs, and patents} on the Flow \textbf{blockchain} using IPFS for storage.}
+            \resumeItem{Created features like \textbf{contract generation, editing, and auditing} with automatic contract ID assignment.}
+            \resumeItem{Won \textbf{Best Use of Flow} in Web3Apps Hackathon, winning \$1000.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+          
+        \resumeProjectHeading
+          {\href{https://devfolio.co/projects/yaash-yet-another-ai-shell-192b}{\textbf{NAASH (Not Another AI Shell)} \ExternalLink} $|$ \emph{TypeScript, Bun, Gemini, OpenAI}}{Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Made an \textbf{AI-powered terminal shell} that simplifies workflows with smart clipboard integration, natural language commands, and system-aware intelligence.}
+            \resumeItem{\textbf{Won Hack This Fall 2024} Virtual edition among 240+ participants, winning \$1000.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+\vspace{-15pt}
+
+
+% %
+% %-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+%      \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+%      \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+%     }}
+%  \end{itemize}
+%  \vspace{-16pt}
+
+
+%-----------POSITION OF RESPONSIBILITY-----------
+\section{Position of Responsibility}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Hackerabad}{Apr 2022 - Present}{Lead}{}
+      \resumeItemListStart
+        % \resumeItem{Organized peer-led learning events and community-driven initiatives that promoted collaboration, inclusion, and technical growth, impacting 1000+ people across various events; managed logistics, volunteers, and addressed community needs to ensure smooth execution.}
+        \resumeItem{\textbf{Led peer-driven events and community initiatives} fostering collaboration and technical growth, impacting \textbf{1000+} people; managed logistics, volunteers, and community needs for seamless execution.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Postman}{Mar 2024 - Present}{Postman Student Leader}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Organized 5+ workshops and event}s to introduce the\textbf{Postman} tool and API-first development practices, collaborating with diverse student groups to foster \textbf{API literacy} among the next generation of developers.}
+      \resumeItemListEnd
+      \resumeSubheading
+    {Streamlit}{Jun 2023 - Jan 2024}
+    {Streamlit Ambassador}{}
+    \resumeItemListStart
+        \resumeItem{Promoted Streamlit and Python in tech communities by organizing workshops, talks, and hands-on sessions.}
+    \resumeItemListEnd
+
+    
+    % \resumeSubheading
+    % {AI Club SNIST}{Dec 2023 -- Present}
+    % {Tech Lead}{}
+    % \resumeItemListStart
+    %     \resumeItem{Coordinating and overseeing technology-related activities within the club to foster innovation and collaboration.}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {CodeDay Hyderabad, HackPrix, OpinHacks, ETHIndia}{} {Event Organizer}{}
+      \resumeItemListStart
+        \resumeItem{Organized \textbf{hackathons and tech events}, including 3 editions of CodeDay (100+ attendees) and HackPrix (500+ hackers), providing underserved students with \textbf{hands-on experience} in exploring tech careers while managing event logistics, participant engagement, and post-event feedback.}
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sreenidhi Institute of Science \& Technology}{Hyderabad, India}
+      {Bachelor of Technology - Computer Science and Engineering(AI \& ML); GPA: 8.33}{Dec 2021 - Jun 2025}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+  \resumeSubHeadingListEnd
+ \vspace{-16pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{\href{https://devpost.com/im45145v}{Won 20+ national and international hackathons \ExternalLink}}conducted by various organizations.}
+    \resumeItem{Granted a \textbf{patent} for "\textbf{Smart Semi-Autonomous Hay and Water Dispenser for cattle}" ({Patent ID: \href{https://drive.google.com/file/d/1Qs8baLPo7Y4kLT1maS8OGJmtCZARBJ8R/view}{390029-001 \ExternalLink}}).}%\textit{Nov 2023}
+
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}
+    \item \href{https://www.credly.com/badges/a05d150c-5137-43ba-8890-d9c86ca47e09}{\textbf{AWS Certified Cloud Practitioner} \ExternalLink} \hfill \textit{May 2024}
+    \item \href{https://www.credly.com/badges/39670da3-fa33-462c-bfe4-a037b808d51f}{\textbf{GitHub Foundations} \ExternalLink} \hfill \textit{Jun 2024}
+    % \item \href{https://www.credly.com/badges/39670da3-fa33-462c-bfe4-a037b808d51f}{\textbf{11x NPTEL Certifications} \ExternalLink} \hfill \textit{Jun 2024}
+    % \item \href{https://drive.google.com/file/d/1phSh_v1abp140iv5iSmUMPDT-ys2EP01/view?usp=sharing}{\textbf{11x NPTEL certifications} \ExternalLink } \hfill  (Python, Data Science, ML, IoT, Java, Cloud, Algorithms, C++, Linear Programming)
+
+    % \item \href{https://www.credly.com/badges/39670da3-fa33-462c-bfe4-a037b808d51f}{\textbf{GitHub Foundations} \ExternalLink} \hfill \textit{Jun 2024}
+
+\end{itemize}
+\end{document}

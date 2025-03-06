@@ -1,12 +1,14 @@
 import { CommandMenu } from "../components/command-menu";
 import { Metadata } from "next";
 import { RESUME_DATA } from "../data/resume-data";
-import { WorkExperience } from "./components/WorkExperience";
+// import { WorkExperience } from "./components/WorkExperience";
 import { Projects } from "./components/Projects";
 import { Education } from "./components/Education";
 import { Summary } from "./components/Summary";
 import { Skills } from "./components/Skills";
 import { Header } from "./components/Header";
+import { ClubExperience } from "./components/ClubExperience";
+import { Certifications } from "./components/Certifications";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -73,14 +75,12 @@ export default function ResumePage() {
 
         <div className="space-y-8 print:space-y-4">
           <Summary summary={RESUME_DATA.summary} />
-
-          <WorkExperience work={RESUME_DATA.work} />
-
-          <Education education={RESUME_DATA.education} />
-
+          {/* <WorkExperience work={RESUME_DATA.work} /> */}
           <Skills skills={RESUME_DATA.skills} />
-
           <Projects projects={RESUME_DATA.projects} />
+          <ClubExperience Club={RESUME_DATA.Club} />
+          <Education education={RESUME_DATA.education} />
+          <Certifications certifications={RESUME_DATA.Certifications} />
         </div>
       </section>
 

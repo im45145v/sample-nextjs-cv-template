@@ -4,16 +4,16 @@ import { Section } from "../../components/ui/section";
 import { RESUME_DATA } from "../../data/resume-data";
 import { cn } from "../../lib/utils";
 
-type WorkExperience = (typeof RESUME_DATA)["work"][number];
-type WorkBadges = readonly string[];
+type ClubExperience = (typeof RESUME_DATA)["Club"][number];
+type ClubBadges = readonly string[];
 
 interface BadgeListProps {
   className?: string;
-  badges: WorkBadges;
+  badges: ClubBadges;
 }
 
 /**
- * Renders a list of badges for work experience
+ * Renders a list of badges for Club experience
  * Handles both mobile and desktop layouts through className prop
  */
 function BadgeList({ className, badges }: BadgeListProps) {
@@ -38,28 +38,28 @@ function BadgeList({ className, badges }: BadgeListProps) {
   );
 }
 
-interface WorkPeriodProps {
-  from: WorkExperience["from"];
-  to?: WorkExperience["to"];
+interface ClubPeriodProps {
+  from?: ClubExperience["from"];
+  to?: ClubExperience["to"];
 }
 
 /**
- * Displays the work period in a consistent format
+ * Displays the Club period in a consistent format
  */
-function WorkPeriod({ from, to }: WorkPeriodProps) {
+function ClubPeriod({ from, to }: ClubPeriodProps) {
   return (
     <div
       className="text-sm tabular-nums text-gray-500"
-      aria-label={`Employment period: ${from} to ${to ?? "Present"}`}
+      aria-label={`Employment period: ${from ?? ""} ${from ? "-" : ""} ${to ?? "Present"}`}
     >
-      {from} - {to ?? "Present"}
+      {from} {from ? "-" : ""} {to ?? "Present"}
     </div>
   );
 }
 
 interface CompanyLinkProps {
-  company: WorkExperience["company"];
-  link: WorkExperience["link"];
+  company: ClubExperience["company"];
+  link: ClubExperience["link"];
 }
 
 /**
@@ -79,16 +79,16 @@ function CompanyLink({ company, link }: CompanyLinkProps) {
   );
 }
 
-interface WorkExperienceItemProps {
-  work: WorkExperience;
+interface ClubExperienceItemProps {
+  Club: ClubExperience;
 }
 
 /**
- * Individual work experience card component
+ * Individual Club experience card component
  * Handles responsive layout for badges (mobile/desktop)
  */
-function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, from, to, description } = work;
+function ClubExperienceItem({ Club }: ClubExperienceItemProps) {
+  const { company, link, badges, title, from, to, description } = Club;
 
   return (
     <Card className="py-1 print:py-0">
@@ -101,7 +101,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
               badges={badges}
             />
           </h3>
-          <WorkPeriod from={from} to={to} />
+          <ClubPeriod from={from} to={to} />
         </div>
 
         <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
@@ -124,24 +124,26 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   );
 }
 
-interface WorkExperienceProps {
-  work: (typeof RESUME_DATA)["work"];
+interface ClubExperienceProps {
+  Club: (typeof RESUME_DATA)["Club"];
 }
 
 /**
- * Main work experience section component
- * Renders a list of work experiences in chronological order
+ * Main Club experience section component
+ * Renders a list of Club experiences in chronological order
  */
-export function WorkExperience({ work }: WorkExperienceProps) {
+export function ClubExperience({ Club }: ClubExperienceProps) {
+  if (!Club) return null;
+
   return (
     <Section>
-      <h2 className="text-xl font-bold" id="work-experience">
-        Work Experience
+      <h2 className="text-xl font-bold" id="Club-experience">
+        Club Experience
       </h2>
-      <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="work-experience">
-        {work.map((item) => (
+      <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="Club-experience">
+        {Club.map((item) => (
           <article key={`${item.company}-${item.from}`} role="article">
-            <WorkExperienceItem work={item} />
+            <ClubExperienceItem Club={item} />
           </article>
         ))}
       </div>

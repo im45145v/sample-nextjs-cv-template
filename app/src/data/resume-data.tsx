@@ -1,62 +1,74 @@
-import {
- Logo
-} from "../images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "../components/icons";
+import { Logo } from "../images/logos";
+import { GitHubIcon, LinkedInIcon, XIcon, DevpostIcon } from "../components/icons";
+//import DevpostIcon from "../images/logos/devpost.png"; // Import the Devpost logo
 
 export const RESUME_DATA = {
-  name: "Your Name",
-  initials: "YN",
-  location: " Lorem Ipsum, DOL",
+  name: "Malla Venkata Sai Ashish",
+  initials: "MVSA",
+  location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/",
-  about:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  about: "Backend Developer, DevOps Enthusiast, Community Guy, 20+ Hackathons Winner",
   summary: (
     <>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae fringilla nulla, 
-      in vehicula ligula. Morbi dignissim tempor justo, sit amet dictum purus feugiat in. 
-      Interdum et malesuada fames ac ante ipsum primis.
+      Aspiring Software Development Engineer with a strong foundation in computer science and practical experience in designing, developing, and deploying web applications. Proficient in Python and Go, with knowledge of cloud technologies such as AWS. Experienced in building backend services and seamlessly integrating various components and technologies.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://defang.io/",
+  avatarUrl: "https://avatars.githubusercontent.com/u/74368820?v=4",
+  personalWebsiteUrl: "https://im45145v.dev/",
   contact: {
-    email: "lorem.ipsum@example.com",
-    tel: "+1234567890",
+    email: "im45145v@gmail.com",
+    tel: "+91 7997642581",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/DefangLabs",
+        url: "https://github.com/im45145v",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/company/defanglabs/",
+        url: "https://linkedin.com/in/im45145v/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://twitter.com/DefangLabs",
+        url: "https://twitter.com/im45145v",
         icon: XIcon,
+      },
+      {
+        name: "Devpost",
+        url: "https://devpost.com/im45145v",
+        icon: DevpostIcon,
       },
     ],
   },
   education: [
     {
-      school: "Faucibus Orci Luctus",
-      degree: "Bachelor's Degree in Vestibulum Ante",
-      start: "2007",
-      end: "2010",
+      school: "Sreenidhi Institute of Science & Technology",
+      degree: "Bachelor of Technology - Computer Science and Engineering (AI & ML)",
+      from: "Dec 2021",
+      to: "Jun 2025",
+      gpa: "8.33",
+      courses: [
+        "Operating Systems",
+        "Data Structures",
+        "Analysis Of Algorithms",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Networking",
+        "Databases",
+      ],
     },
   ],
+  /*
   work: [
     {
-      company: "Company",
+      company: "Company A",
       link: "about:blank",
       badges: ["Remote", "React", "TypeScript", "Node.js"],
       title: "Job Position",
       logo: Logo,
-      start: "2024",
-      end: null,
+      from: "2024",
+      to: null,
       description: (
         <>
           Sed eget felis lacus. Maecenas placerat diam a tincidunt viverra. 
@@ -76,111 +88,243 @@ export const RESUME_DATA = {
       ),
     },
     {
-      company: "Company",
+      company: "Company B",
       link: "about:blank",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-      ],
+      badges: ["Remote", "React", "TypeScript", "Node.js"],
       title: "Job Position",
       logo: Logo,
-      start: "2021",
-      end: "2024",
+      from: "2021",
+      to: "2024",
       description: (
         <>
           Quisque vitae elementum orci. In hac habitasse platea dictumst.
           <ul className="list-inside list-disc">
             <li>
-            Duis ornare ligula nec tincidunt mattis, crabitur lectus neque.
+              Duis ornare ligula nec tincidunt mattis, crabitur lectus neque.
             </li>
             <li>
-            Donec porttitor nec magna quis facilisis mauris, rutrum a diam vitae rhoncus 
-            donec luctus.
+              Donec porttitor nec magna quis facilisis mauris, rutrum a diam vitae rhoncus 
+              donec luctus.
             </li>
             <li>
-            Phasellus nibh felis, scelerisque aliquet cursus a, blandit id sem, 
-            nam aliquet dolor.
+              Phasellus nibh felis, scelerisque aliquet cursus a, blandit id sem, 
+              nam aliquet dolor.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Company",
+      company: "Company C",
       link: "about:blank",
       badges: ["Remote", "React", "TypeScript", "Node.js"],
       title: "Job Position",
       logo: Logo,
-      start: "2015",
-      end: "2021",
+      from: "2015",
+      to: "2021",
       description: (
         <>
           Sed aliquet hendrerit odio, in elementum ante convallis quis.
           <ul className="list-inside list-disc">
             <li>
-            Donec blandit nibh at felis vehicula vehicula, nunc semper porttitor malesuada.
+              Donec blandit nibh at felis vehicula vehicula, nunc semper porttitor malesuada.
             </li>
             <li>
-            Etiam rutrum dolor vel elit cursus elementum. 
+              Etiam rutrum dolor vel elit cursus elementum. 
             </li>
             <li>
-            Curabitur urna sem, faucibus auctor dignissim a, eleifend at mauris.
+              Curabitur urna sem, faucibus auctor dignissim a, eleifend at mauris.
             </li>
           </ul>
         </>
       ),
-    }
+    },
+  ],
+  */
+  Club: [
+    {
+      company: "Hackerabad",
+      link: "about:blank",
+      badges: ["Leadership", "Event Management"],
+      title: "Lead",
+      logo: Logo,
+      from: "Apr 2022",
+      to: "Present",
+      description: (
+        <>
+          Led peer-driven events and community initiatives fostering collaboration and technical growth, impacting 1000+ people; managed logistics, volunteers, and community needs for seamless execution.
+        </>
+      ),
+    },
+    {
+      company: "Postman",
+      link: "about:blank",
+      badges: ["API", "Workshops"],
+      title: "Postman Student Leader",
+      logo: Logo,
+      from: "Mar 2024",
+      to: "Present",
+      description: (
+        <>
+          Organized 5+ workshops and events to introduce the Postman tool and API-first development practices, collaborating with diverse student groups to foster API literacy among the next generation of developers.
+        </>
+      ),
+    },
+    // {
+    //   company: "Streamlit",
+    //   link: "about:blank",
+    //   badges: ["Python", "Workshops"],
+    //   title: "Streamlit Ambassador",
+    //   logo: Logo,
+    //   from: "Jun 2023",
+    //   to: "Jan 2024",
+    //   description: (
+    //     <>
+    //       Promoted Streamlit and Python in tech communities by organizing workshops, talks, and hands-on sessions.
+    //     </>
+    //   ),
+    // },
+    {
+      company: "CodeDay Hyderabad, HackPrix, OpinHacks, ETHIndia",
+      link: "about:blank",
+      badges: [],//"Event Management", "Hackathons"
+      title: "Event Organizer",
+      logo: Logo,
+      description: (
+        <>
+          Organized hackathons and tech events, including 3 editions of CodeDay (100+ attendees) and HackPrix (500+ hackers), providing underserved students with hands-on experience in exploring tech careers while managing event logistics, participant engagement, and post-event feedback.
+        </>
+      ),
+    },
   ],
   skills: [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "Python",
+    "Go",
+    "C",
+    "C++",
+    "MySQL",
+    "MongoDB",
+    "AWS",
+    "Flask",
+    "Gin",
+    "GitHub",
+    "Docker",
+    "Postman",
+    "WebDev",
+    "Linux",
   ],
   projects: [
     {
-      title: "Project 1",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Campus Nourish",
+      techStack: ["MongoDB", "Streamlit", "Web Development"],
       description:
-        "Nam aliquet dolor a risus pharetra placerat, praesent congue nulla dolor.",
+        "Implemented a web app for hostelers to view food availability, vote on meal options, and stay informed through polling and notice board features. Best Use of MongoDB Atlas in WaffleHacks 2023 among 120+ projects.",
       logo: Logo,
       link: {
-        label: "blank",
-        href: "about:blank",
+        label: "Campus Nourish",
+        href: "https://github.com/im45145v/CampusNourish",
       },
     },
     {
-      title: "Project 2",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-      ],
+      title: "SnippetSafe",
+      techStack: ["React.js", "JavaScript", "MongoDB", "Hugging Face", "GoDaddy"],
       description:
-        "Pellentesque habitant morbi tristique senectus.",
+        "Built a code snippet storage tool with React.js and MongoDB, allowing efficient retrieval using AI-powered search. Integrated tags and descriptions for snippets, enabling users to find relevant code snippets based on their queries quickly, and launched the tool with a website hosted on GoDaddy, providing easy access across devices. Winner of Frost Hacks in Hyderabad, emerging as the best among 135+ projects and 500+ participants.",
       logo: Logo,
       link: {
-        label: "blank",
-        href: "about:blank",
+        label: "SnippetSafe",
+        href: "https://devpost.com/software/snippetsafe",
       },
     },
     {
-      title: "Project 3",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Flowmingo",
+      techStack: ["Flow Blockchain", "IPFS", "Streamlit"],
       description:
-        "Curabitur lectus neque, tempor at tortor non, viverra tempor tellus.",
+        "Developed a platform to manage smart contracts, NFTs, and patents on the Flow blockchain using IPFS for storage. Created features like contract generation, editing, and auditing with automatic contract ID assignment. Won Best Use of Flow in Web3Apps Hackathon, winning $1000.",
       logo: Logo,
       link: {
-        label: "blank",
-        href: "about:blank",
+        label: "Flowmingo",
+        href: "https://devpost.com/software/flowmingo",
       },
+    },
+    {
+      title: "NAASH (Not Another AI Shell)",
+      techStack: ["TypeScript", "Bun", "Gemini", "OpenAI"],
+      description:
+        "Made an AI-powered terminal shell that simplifies workflows with smart clipboard integration, natural language commands, and system-aware intelligence. Won Hack This Fall 2024 Virtual edition among 240+ participants, winning $1000.",
+      logo: Logo,
+      link: {
+        label: "NAASH (Not Another AI Shell)",
+        href: "https://devfolio.co/projects/yaash-yet-another-ai-shell-192b",
+      },
+    },
+  ],
+  Certifications: [
+    {
+      title: "AWS Certified Cloud Practitioner",
+      techStack: [],
+      description: "AWS Certified Cloud Practitioner",
+      logo: Logo,
+      link: {
+        label: "AWS Certified Cloud Practitioner",
+        href: "https://www.credly.com/badges/a05d150c-5137-43ba-8890-d9c86ca47e09",
+      },
+    },
+    {
+      title: "GitHub Foundations",
+      techStack: [],
+      description: "GitHub Foundations",
+      logo: Logo,
+      link: {
+        label: "GitHub Foundations",
+        href: "https://www.credly.com/badges/39670da3-fa33-462c-bfe4-a037b808d51f",
+      },
+    },
+  ],
+  achievements: [
+    {
+      title: "Won 20+ national and international hackathons",
+      description: "Conducted by various organizations.",
+      link: {
+        label: "Won 20+ national and international hackathons",
+        href: "https://devpost.com/im45145v",
+      },
+    },
+    {
+      title: "Granted a patent for 'Smart Semi-Autonomous Hay and Water Dispenser for cattle'",
+      description: "Patent ID: 390029-001",
+      link: {
+        label: "Smart Semi-Autonomous Hay and Water Dispenser for cattle",
+        href: "https://drive.google.com/file/d/1Qs8baLPo7Y4kLT1maS8OGJmtCZARBJ8R/view",
+      },
+    },
+  ],
+  positions: [
+    {
+      organization: "Hackerabad",
+      role: "Lead",
+      from: "Apr 2022",
+      to: "Present",
+      description: "Led peer-driven events and community initiatives fostering collaboration and technical growth, impacting 1000+ people; managed logistics, volunteers, and community needs for seamless execution.",
+    },
+    {
+      organization: "Postman",
+      role: "Postman Student Leader",
+      from: "Mar 2024",
+      to: "Present",
+      description: "Organized 5+ workshops and events to introduce the Postman tool and API-first development practices, collaborating with diverse student groups to foster API literacy among the next generation of developers.",
+    },
+    {
+      organization: "Streamlit",
+      role: "Streamlit Ambassador",
+      from: "Jun 2023",
+      to: "Jan 2024",
+      description: "Promoted Streamlit and Python in tech communities by organizing workshops, talks, and hands-on sessions.",
+    },
+    {
+      organization: "CodeDay Hyderabad, HackPrix, OpinHacks, ETHIndia",
+      role: "Event Organizer",
+      description: "Organized hackathons and tech events, including 3 editions of CodeDay (100+ attendees) and HackPrix (500+ hackers), providing underserved students with hands-on experience in exploring tech careers while managing event logistics, participant engagement, and post-event feedback.",
     },
   ],
 } as const;
