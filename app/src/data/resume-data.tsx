@@ -5,8 +5,9 @@ import { GitHubIcon, LinkedInIcon, XIcon, DevpostIcon } from "../components/icon
 export const RESUME_DATA = {
   name: "Malla Venkata Sai Ashish",
   initials: "MVSA",
+  nickname: "Ashish Malla", // Add this if you want to use a nickname
   location: "Hyderabad, India",
-  locationLink: "https://www.google.com/maps/",
+  locationLink: "https://www.google.com/maps/place/Hyderabad,+Telangana/",
   about: "Backend Developer, DevOps Enthusiast, Community Guy, 20+ Hackathons Winner",
   summary: (
     <>
@@ -190,6 +191,8 @@ export const RESUME_DATA = {
       badges: [],//"Event Management", "Hackathons"
       title: "Event Organizer",
       logo: Logo,
+      from: "",
+      to: "",
       description: (
         <>
           Organized hackathons and tech events, including 3 editions of CodeDay (100+ attendees) and HackPrix (500+ hackers), providing underserved students with hands-on experience in exploring tech careers while managing event logistics, participant engagement, and post-event feedback.
@@ -200,9 +203,6 @@ export const RESUME_DATA = {
   skills: [
     "Python",
     "Go",
-    "C",
-    "C++",
-    "MySQL",
     "MongoDB",
     "AWS",
     "Flask",
@@ -212,6 +212,7 @@ export const RESUME_DATA = {
     "Postman",
     "WebDev",
     "Linux",
+    "MySql"
   ],
   projects: [
     {

@@ -11,8 +11,14 @@ import { ClubExperience } from "./components/ClubExperience";
 import { Certifications } from "./components/Certifications";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - Resume`,
+  title: `${RESUME_DATA.nickname} - Resume`, // Using initials
+  // OR
+  // title: `${RESUME_DATA.nickname} - Resume`, // Using nickname if you added it
   description: RESUME_DATA.about,
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+  },
   openGraph: {
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
@@ -20,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://cv.im45145v.dev/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
+    images: ["https://cv.im45145v.dev/opengraph-image"],
   },
 };
 

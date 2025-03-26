@@ -5,8 +5,8 @@ import { RESUME_DATA } from "../../data/resume-data";
 type Education = (typeof RESUME_DATA)["education"][number];
 
 interface EducationPeriodProps {
-  start: Education["start"];
-  end: Education["end"];
+  start: Education["from"];
+  end: Education["to"];
 }
 
 /**
@@ -31,7 +31,7 @@ interface EducationItemProps {
  * Individual education card component
  */
 function EducationItem({ education }: EducationItemProps) {
-  const { school, start, end, degree } = education;
+  const { school, from, to, degree } = education;
 
   return (
     <Card>
@@ -43,7 +43,7 @@ function EducationItem({ education }: EducationItemProps) {
           >
             {school}
           </h3>
-          <EducationPeriod start={start} end={end} />
+          <EducationPeriod start={from} end={to} />
         </div>
       </CardHeader>
       <CardContent
