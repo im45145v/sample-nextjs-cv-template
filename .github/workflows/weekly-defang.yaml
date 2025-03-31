@@ -26,6 +26,10 @@ jobs:
       run: |
         curl -L https://github.com/DefangLabs/defang/releases/latest/download/defang-linux-amd64 -o defang
         chmod +x defang
+        file defang  # Verify file type
+        ls -lah defang  # Check file size and permissions
+        head -n 10 defang  # Debug: Show first few lines
 
     - name: Run Defang Compose Up
-      run: ./defang compose up
+      run: |
+        ./defang compose up || { echo "Defang execution failed"; cat defang; exit 1; }
