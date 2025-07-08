@@ -59,6 +59,18 @@ export const RESUME_DATA = {
         "Databases",
       ],
     },
+    {
+      school: "Indian Institute of Management Ranchi",
+      degree: "Master of Business Administration – Business Analytics",
+      from: "Jun 2025",
+      to: "Present",
+      gpa: "",
+      courses: [
+        "Business Analytics",
+        "Data Management",
+        "Marketing",
+      ],
+    },
   ],
   /*
   work: [
