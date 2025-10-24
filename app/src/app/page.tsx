@@ -19,26 +19,6 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
   },
-  openGraph: {
-    title: `${RESUME_DATA.name} - Resume`,
-    description: RESUME_DATA.about,
-    type: "profile",
-    locale: "en_US",
-    images: [
-      {
-        url: "https://cv.im45145v.dev/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: `${RESUME_DATA.name}'s profile picture`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - Resume`,
-    description: RESUME_DATA.about,
-    images: ["https://cv.im45145v.dev/opengraph-image"],
-  },
 };
 
 /**
